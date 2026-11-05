@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5efe5">
+  <title>mori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="mori home">
+        <span class="brand-mark" aria-hidden="true">✿</span>
+        <span>mori</span>
+      </a>
+
+      <div class="nav-panel" id="nav-panel">
+        <ul class="nav-links">
+          <li style="--i: 0"><a class="nav-link active" href="#home">Home</a></li>
+          <li style="--i: 1"><a class="nav-link" href="#about">About</a></li>
+          <li style="--i: 2"><a class="nav-link" href="#work">My work</a></li>
+        </ul>
+        <a class="nav-note" href="#contact">let's talk <span aria-hidden="true">↗</span></a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" type="button"
+          aria-label="Switch to dark mode" title="Change theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+        </button>
+        <button class="menu-toggle" id="menu-toggle" type="button"
+          aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-panel">
+          <span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <h1>Good things<br>take <em>their time.</em></h1>
+        <p class="hero-text">A simple space for ideas, little projects, and everything in between.</p>
+        <a class="hero-link" href="#work">Take a look around <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration">
+        <div class="sun-shape"></div>
+        <div class="art-card">
+          <span class="art-flower">✿</span>
+        </div>
+      </div>
+      <span class="scroll-note">SCROLL A LITTLE ↓</span>
+    </section>
+
+    <section class="lower-section" id="about">
+      <span class="section-kicker">01</span>
+      <h2>Nothing too complicated.<br><em>Just the good stuff.</em></h2>
+      <p>This page is a little demo to show the responsive navigation, theme switcher, and menu animations in action.</p>
+    </section>
+    <section class="lower-section work-section" id="work">
+      <span class="section-kicker">02</span>
+      <h2>Made to feel<br><em>just right.</em></h2>
+      <p>Try resizing the window, opening the mobile menu, or switching between light and dark mode.</p>
+    </section>
+    <section class="lower-section contact-section" id="contact">
+      <span class="section-kicker">03</span>
+      <h2>Have something<br><em>in mind?</em></h2>
+      <p>Good things start with a hello. This is a demo contact section.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
